@@ -22,4 +22,6 @@ public class EnumerationSystem {
     }
     }
 }
-* */
+*
+enums SÃO OBJETOS IMUTÁVEIS DISPONÍVEIS NA NOSSA APLICAÇÃO.
+*/
