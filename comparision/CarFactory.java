@@ -11,7 +11,7 @@ public class CarFactory {
         Car car = car1;
 
         //case 01
-        System.out.println(car1 == car2); //false
+        System.out.println(car == car2); //false
         //case 02
         System.out.println(car1.equals(car2)); //false
     }
