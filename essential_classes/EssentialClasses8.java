@@ -9,5 +9,5 @@ public class EssentialClasses8 {
         BigDecimal divide = BigDecimal.valueOf(3);
         BigDecimal result = BigDecimal.TEN.divide(divide, 3, RoundingMode.HALF_EVEN); //Definindo o modo de arredondamento e o mais comum é o HALF_EVEN. Ele eleva o resultado da nossa dizima
         System.out.println(result); //3.333
-            }
+    }
 }
