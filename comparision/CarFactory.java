@@ -8,7 +8,7 @@ public class CarFactory {
         Car car4 = new Car("white", "fiat", "palio");
         Car car5 = new Car("white", "fiat", "palio");
 
-        Car car6 = car1;
+        Car car = car1;
 
         //case 01
         System.out.println(car1 == car2); //false
@@ -19,3 +19,5 @@ public class CarFactory {
 
 //Quando usamos o == estamos comparando referências de objeto.
 //Todos os carros por mais que sejam de instâncias diferentes, eles são iguais. Não quer dizer que sejam os mesmos objetos.
+
+//Neste exemplo vemos igualdade de objetos e referência para um mesmo objeto usando o ==.
