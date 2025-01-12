@@ -10,6 +10,6 @@ public class SystemApp {
         //Name: Gustavo age: 21 weight: 80.0 income: R$ 3234.56
 
 
-        System.out.println("Name: %s Age: %d weight: %.2f Income: R$ %,.2f", name, age, weight , income);
+        System.out.printf("Name: %s Age: %d weight: %.2f Income: R$ %,.2f", name, age, weight , income);
     }
 }
