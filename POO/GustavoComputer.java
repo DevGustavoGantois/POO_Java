@@ -6,7 +6,15 @@ public class GustavoComputer {
 
     msnMessenger.sendMessage();
     msnMessenger.receivingMessage();
-    //msnMessenger.connectingTheInternet();
     msnMessenger.SaveHistoryMessenger();
+
+
+    FacebookMessenger facebookMessenger = new FacebookMessenger();
+    facebookMessenger.sendMessage();
+    facebookMessenger.receivingMessage();
+
+    TelegramMessenger telegramMessenger = new TelegramMessenger();
+    telegramMessenger.sendMessage();
+    telegramMessenger.receivingMessage();
     }
 }
