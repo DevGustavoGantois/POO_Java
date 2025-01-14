@@ -2,18 +2,24 @@ package src.POO;
 
 public class GustavoComputer {
     public static void main(String[] args) {
-    MSNMessenger msnMessenger = new MSNMessenger();
+    InstantMessagingSystem ims = null;
 
-    msnMessenger.sendMessage();
-    msnMessenger.receivingMessage();
+    /*
+    Não se sabe qual o app
+    mas qualquer um deverá enviar e receber uma mensagem.
+    * */
 
+        String ChooseApp = "???";
 
-    FacebookMessenger facebookMessenger = new FacebookMessenger();
-    facebookMessenger.sendMessage();
-    facebookMessenger.receivingMessage();
+        if(ChooseApp.equals("msn")) {
+            ims = new MSNMessenger();
+        } else if (ChooseApp.equals("fbm")) {
+            ims = new FacebookMessenger();
+        } else {
+            ims = new TelegramMessenger();
+        }
 
-    TelegramMessenger telegramMessenger = new TelegramMessenger();
-    telegramMessenger.sendMessage();
-    telegramMessenger.receivingMessage();
+        ims.sendMessage();
+        ims.receivingMessage();
     }
 }
