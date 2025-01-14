@@ -6,7 +6,6 @@ public class GustavoComputer {
 
     msnMessenger.sendMessage();
     msnMessenger.receivingMessage();
-    msnMessenger.SaveHistoryMessenger();
 
 
     FacebookMessenger facebookMessenger = new FacebookMessenger();
