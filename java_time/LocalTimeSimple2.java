@@ -1,6 +1,7 @@
 package src.java_time;
 
 import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 
 public class LocalTimeSimple2 {
     public static void main(String[] args) {
@@ -12,5 +13,11 @@ public class LocalTimeSimple2 {
 
         System.out.println(past);
         System.out.println(future);
+
+
+        LocalTime hour = LocalTime.of(13, 21, 42);
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("ss-mm-HH");
+        String formattedHour = hour.format(formatter);
+        System.out.println(formattedHour);
     }
 }
