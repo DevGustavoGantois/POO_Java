@@ -12,6 +12,6 @@ public class FormattedLocalDate {
         System.out.println(date); //2023-01-13
 
         //Formatando a data criada acima
-        System.out.println(formatter.format(data));
+        System.out.println(formatter.format(date));
     }
 }
