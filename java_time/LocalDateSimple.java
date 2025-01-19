@@ -36,5 +36,9 @@ public class LocalDateSimple {
 
         //date2 está após a date1? true
         System.out.println(date2.isAfter(date1));
+        //date2 é igual a date1? false
+        System.out.println(date2.isEqual(date1));
+        //date2 vem antes da date1? false
+        System.out.println(date2.isBefore(date1));
     }
 }
