@@ -23,6 +23,9 @@ public class LocalDateSimple {
 
         LocalDate aniversaryGustavo = LocalDate.of(2023, 4, 3);
         LocalDate date30years = aniversaryGustavo.plusYears(15);
+        LocalDate newDate = aniversaryGustavo.minusDays(7);
+
+        System.out.println(newDate);
 
         System.out.println(date30years);
     }
