@@ -21,6 +21,7 @@ public class LocalDateSimple {
 
         System.out.println(correctDate);
 
+        //Manipulações com Java Time LocalDate
         LocalDate aniversaryGustavo = LocalDate.of(2023, 4, 3);
         LocalDate date30years = aniversaryGustavo.plusYears(15);
         LocalDate newDate = aniversaryGustavo.minusDays(7);
@@ -28,5 +29,12 @@ public class LocalDateSimple {
         System.out.println(newDate);
 
         System.out.println(date30years);
+
+        //Comparando respectivas datas:
+        LocalDate date1 = LocalDate.of(2023, 3, 4);
+        LocalDate date2 = LocalDate.of(2024, 4, 3);
+
+        //date2 está após a date1? true
+        System.out.println(date2.isAfter(date1));
     }
 }
