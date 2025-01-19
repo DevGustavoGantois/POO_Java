@@ -1,6 +1,7 @@
 package src.java_time;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class LocalDateSimple {
     public static void main(String[] args) {
@@ -11,5 +12,13 @@ public class LocalDateSimple {
 
         System.out.println(actuallyDate);
         System.out.println(myAniversary);
+
+        String stringDateBr = "19/01/2024";
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+
+        LocalDate correctDate = LocalDate.parse(stringDateBr, formatter);
+
+        System.out.println(correctDate);
     }
 }
