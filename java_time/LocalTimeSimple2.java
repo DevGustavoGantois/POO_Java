@@ -16,8 +16,9 @@ public class LocalTimeSimple2 {
 
 
         LocalTime hour = LocalTime.of(13, 21, 42);
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("ss-mm-HH");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("ss-mm-HH"); //Horas minutos e segundos.
         String formattedHour = hour.format(formatter);
-        System.out.println(formattedHour);
+        System.out.println(hour); //13:21:42
+        System.out.println(formattedHour); //42-12-13
     }
 }
