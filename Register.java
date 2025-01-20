@@ -19,4 +19,27 @@ public class Register {
         this.client = client;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public Long getPhone() {
+        return phone;
+    }
+
+    public LocalDate getBornDate() {
+        return bornDate;
+    }
+
+    public Double getSugestValue() {
+        return sugestValue;
+    }
+
+    public boolean isClient() {
+        return client;
+    }
 }
