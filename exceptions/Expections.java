@@ -17,5 +17,14 @@ public class Expections {
 
         Double value_two = NumberFormat.getCurrencyInstance().parse("a175");
         System.out.println(value_two);
+
+
+        stateCheck("ba");
+    }
+
+    public static void stateCheck(String nameState) throws StateValidationException {
+        if(!nameState.equalsIgnoreCase("BA"))
+            throw new StateValidationException();
+        System.out.println("Welcome" + nameState.toUpperCase());
     }
 }
