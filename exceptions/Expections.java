@@ -8,9 +8,10 @@ public class Expections {
             Double value = (double) (100 / 3);
             System.out.println(value);
 
-        } catch (Expection ex) {
+        } catch (StateValidationException ex) {
             System.out.println("error");
-            ex.printStackTrace();
+            System.out.println(ex.getMessage());
+            System.out.println("Select the valid state.");
         } finally {
             System.out.println("Finally block");
         }
