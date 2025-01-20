@@ -23,7 +23,9 @@ public class Expections {
         stateCheck("ba");
     }
 
-    public static void stateCheck(String nameState) throws StateValidationException {
+    public static void stateCheck(String nameState) throws StateValidationException, Exception {
+        if(!nameState.equalsIgnoreCase("FL"))
+            throw new Exception();
         if(!nameState.equalsIgnoreCase("BA"))
             throw new StateValidationException();
         System.out.println("Welcome" + nameState.toUpperCase());
