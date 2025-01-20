@@ -1,9 +1,6 @@
-package src.src;
+package src;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
-import src.Register;
-import sun.reflect.generics.visitor.Reifier;
-
+import java.lang.System;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -27,7 +24,7 @@ public class RegisterSystem {
     }
 
     public static void writeLimitLayout(List<Register> registers) {
-        System.out.println("***** - LIMIT LAYOUT - ****");
+        java.lang.System.out.println("***** - LIMIT LAYOUT - ****");
 
         try {
             StringBuilder content = new StringBuilder();
@@ -39,10 +36,10 @@ public class RegisterSystem {
                 content.append(register.getBornDate() + ";");
                 content.append(register.getSugestValue() + ";");
                 content.append(register.isClient() + ";");
-                content.append(System.lineSeparator());
+                content.append(java.lang.System.lineSeparator());
             };
 
-            System.out.println(content.toString());
+            java.lang.System.out.println(content.toString());
 
             Path destinyArq = Paths.get("C:\\arquivos\\rocket\\lista-contatos-modelo-delimitado.csv");
             Files.write(destinyArq, content.toString().getBytes(StandardCharsets.UTF_8));
@@ -50,7 +47,7 @@ public class RegisterSystem {
             ex.printStackTrace();
         }
 
-        System.out.println("The end....");
+        java.lang.System.out.println("The end....");
     }
 
     public static List<Register> writeLimitLayout() {
@@ -79,7 +76,7 @@ public class RegisterSystem {
     }
 
     public static void writePositionalLayout(List<Register> registers) {
-        System.out.println("**** - POSITION LAYOUT - ****");
+        java.lang.System.out.println("**** - POSITION LAYOUT - ****");
 
         System.out.println("The end...");
     }
