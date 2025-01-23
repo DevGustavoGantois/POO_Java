@@ -13,7 +13,7 @@ public class SimpleExpressions {
         System.out.println(text);
         System.out.println(text_two);
 
-        String funcData = String.format("Register: ¨%d - Name: %s - Salary: %,.2f", name, register, salary);
+        String funcData = String.format("Register: ¨%05d - Name: %-15s - Salary: %,.2f", name, register, salary);
         System.out.println(funcData);
     }
 }
