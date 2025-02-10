@@ -2,7 +2,7 @@ package src;
 
 public class Arrays {
     public static void main(String[] args) {
-        Integer [] array = new Integer[6];
+        Integer [] array = new Integer[6]; //Podemos fazer uma abreviação, porém temos que ter os valores fixos
         array[0] = 2;
         array[1] = 4;
         array[2] = 10;
